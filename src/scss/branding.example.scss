@@ -1,0 +1,115 @@
+/* This is how we override the settings to provide another visual theme. The css-classes here are being applied on <body> using the branding-service. */
+
+$brand-background: #03385C;
+
+/*HEADER BAR*/
+
+$brand-header-bar-color: #03385C;
+
+/*GENERIC */
+
+$brand-foreground: #059AC4 !important;
+
+/* Background images */
+
+$background-image-url: url(../img/cars.jpg) !important;
+
+/*BRAND TYPO*/
+
+$brand-font-heading: 'Roboto' !important;
+$brand-voice-font: 'Roboto' !important;
+$brand-icon-color: $brand-foreground;
+
+/* Buttons */
+
+$brand-button-background-color: $brand-background;
+$brand-background-active: #47A6EC;
+$brand-button-foreground-color: #FFF;
+$brand-bubble-color: #80C545;
+
+/*Brand Side Bar*/
+
+$brand-side-bar-color: #3587c4;
+
+/* Color Overrides */
+
+.branding-blue-energy {
+    .side-bar-content {
+        background-color: $brand-side-bar-color !important;
+        .sea-side-bar {
+            background-color: $brand-side-bar-color !important;
+            .list {
+                background-color: $brand-side-bar-color !important;
+                > .item {
+                    background-color: $brand-side-bar-color !important;
+                }
+            }
+            a,
+            .item {
+                background-color: $brand-side-bar-color !important;
+                &.active > .item,
+                &.active > a {
+                    background-color: white !important;
+                    color: $brand-background-active !important;
+                }
+            }
+        }
+    }
+    .home-menu {
+        .home-menu-title,
+        .home-menu-badge,
+        .home-menu-link,
+        .seapoc-badge-wrap .ion {
+            color: $brand-foreground;
+        }
+    }
+    font-family: $brand-voice-font;
+    .bg-blur {
+        background-image: $background-image-url;
+    }
+    .bar-dark {
+        background-color: $brand-background;
+        font-family: $brand-font-heading;
+        .ion {
+            color: #FFF !important;
+        }
+    }
+    .prev-btn,
+    .next-btn {
+        color: $brand-foreground;
+    }
+    /* Location Header*/
+    .bubble-content header {
+        font-family: $brand-font-heading;
+    }
+    .location-consumption {
+        font-family: $brand-font-heading;
+        color: $brand-foreground;
+    }
+    .device-name {
+        color: $brand-foreground;
+    }
+    .control-row,
+    .info-row {
+        .ion {
+            color: $brand-icon-color;
+        }
+    }
+    .tabs .icon {
+        color: $brand-icon-color;
+    }
+    .button-energized {
+        background-color: $brand-button-background-color;
+        border-color: $brand-button-background-color;
+        color: $brand-button-foreground-color;
+    }
+    /* ionic Modals*/
+    .modal .bar-energized {
+        background-color: $brand-background;
+        border-color: $brand-background;
+    }
+    /*Device Effect Bubble*/
+    .device-row .effect-bubble {
+        background-color: $brand-bubble-color;
+    }
+}

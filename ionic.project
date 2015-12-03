@@ -1,0 +1,19 @@
+{
+  "name": "Sigma-starter-template",
+  "app_id": "22a82e26",
+  "gulpStartupTasks": [
+    "default",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ],
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ]
+}

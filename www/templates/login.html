@@ -1,0 +1,17 @@
+<ion-view view-title="Login" hide-nav-bar="true"> 
+    <ion-content padding="true" has-header="true" class="login-wrap">
+       
+            <div class="row login-row">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Användarnamn" />
+                    <input type="text" placeholder="Lösenord" />
+                    <input type="submit" placeholder="Logga in" value="Logga in" ng-click="doLogin(user, password)" />
+                    <div class="login-checkbox" ng-click="toggleBranding()">
+                        <label>
+                            <i class="ion" ng-class="{'ion-android-checkbox-outline-blank' : !branding.enabled, 'ion-android-checkbox-outline' : branding.enabled }"> </i> Rebranding
+                        </label>
+                    </div>
+                </div>
+            </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-content id="main-menu" class="side-bar-content" ng-controller="sideMenuController">
+    <div class="sea-side-bar">
+        <ion-list>
+            <ion-item ui-sref="app.login" ui-sref-active="active" ng-click="goToState('app.login')">
+                <i class="ion ion-home"></i>
+                <span translate>  LOGIN </span>
+            </ion-item>
+            <ion-item ui-sref="app.landing" ui-sref-active="active" ng-click="goToState('app.landing')">
+                <i class="ion ion-social-euro"></i>
+                <span translate> LANDINGPAGE </span> 
+            </ion-item> 
+        </ion-list>
+      <!--   <div id="country-flags" class="country-flag-container">
+            <img width="64px" ng-click="changeLanguage('sv')" src="img/se.png" />
+            <img width="64px" ng-click="changeLanguage('fi')" class="margin-left-12" src="img/fi.png" />
+        </div> -->
+    </div>
+</ion-content>

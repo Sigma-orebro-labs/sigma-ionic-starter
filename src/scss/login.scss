@@ -1,0 +1,103 @@
+@import "app-variables.scss";
+
+.login-logo{
+  max-width: 200px;
+  height: auto;
+  margin-top: -10px;
+}
+
+.login-row{
+  margin-top: 100px;
+  height: 500px;
+
+
+  .item-input {
+    background-color: #f0f0f0;
+  }
+
+  .input-wrap{
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 250px;
+    // background-color:;
+
+    img {
+      margin-bottom: 25px; 
+    }
+
+    input {
+      height: 45px;
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+      display: block;
+      margin: auto 0 1em 0;
+      font-family: "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+
+
+      &[type="text"]{
+        background: rgba(4, 7, 8, 0.62);
+        color: #FFF;
+        &::-webkit-input-placeholder{
+          color: #FFF;
+        }
+      }
+
+      &[type="submit"] {
+        background: #FFF;
+        padding: 10px;
+        border: 0;
+        color: $vfOrange;
+      }
+
+      &[type="checkbox"]{
+        height: auto;
+        display: inline-block;
+        width: 40px;
+      }
+    }
+    .login-checkbox{
+      margin: auto 0 1em 0;
+      text-align: center;
+      display: block;
+      height: 44px;
+      color: #FFF;
+      label{
+        padding: 15px 10px 15px 10px;
+        display: block;
+        width: 100%;
+      }
+			i {
+				margin-right: 4px;		
+			}
+    }
+	  
+
+  }
+}
+
+
+.login-wrap{
+  background: url(../img/sigmabg.jpg) #FFF 50% 60%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.login-icon{
+  text-align: center;
+}
+
+.notification-icon{
+
+}
+
+
+.powered-by {
+    margin-top: -10px;
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    right: 5%;
+}

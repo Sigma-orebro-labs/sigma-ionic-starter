@@ -1,0 +1,24 @@
+<!-- This is our Masterpage. -->
+<ion-nav-bar class="bar-dark" align-title="left">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+</ion-nav-bar>
+<ion-side-menus enable-menu-with-back-views="false">
+    <!-- Left menu -->
+    <ion-side-menu-content edge-drag-threshold="75">
+        <ion-nav-bar class="bar-dark">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            <ion-nav-buttons>
+                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <!--<div ng-include="'/templates/splash/blue-energy.html'" ng-if="showSplash"></div>-->
+        <div ng-include="splashTemplateUrl" ng-if="showSplash"></div>
+        <!-- Main content, usually <ion-nav-view> -->
+        <ion-nav-view name="mainContent">
+        </ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" width="175" ng-include="'templates/sidemenus/homeSidemenu.html'" dra>
+    </ion-side-menu>
+</ion-side-menus>
