@@ -1,1 +1,1 @@
-Basic starter template for ionic-apps. 
+Basic starter template for ionic-apps
