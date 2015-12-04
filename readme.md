@@ -1,1 +1,2 @@
-Basic starter template for ionic-apps. 
+#sigma-ionic-starter
+Test

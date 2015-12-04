@@ -10,15 +10,16 @@
         service.brandingActive = false;
 
         service.assignBrandToDOM = function(brandSettings) {
-            /* Yep. prob bad practice. but works */
+            /* Yep.  bad practice. but works */
             angular.element('body').addClass('branding-' + brandSettings.brandName);
             service.brandingActive = true;
         };
 
         service.removeBranding = function() {
-            /* Yep. prob bad practice. but works */
+            /* Yep.  bad practice. but works */
             angular.element('body').removeClass('branding-blue-energy');
-        };
+            service.brandingActive = false;
+        }; 
 
         service.getBrandingForUser = function(user) {
             var dfd = $q.defer();
