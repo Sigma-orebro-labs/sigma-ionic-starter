@@ -3,7 +3,7 @@ var gutil = require('gulp-util');
 var bower = require('bower');
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
-var minifyCss = require('gulp-minify-css');
+var cleanCss = require('gulp-clean-css');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var jshint = require('gulp-jshint');
@@ -35,7 +35,7 @@ gulp.task('sass', function(done) {
             errLogToConsole: true
         }))
         .pipe(gulp.dest('./www/css/'))
-        .pipe(minifyCss({
+        .pipe(cleanCss({
             keepSpecialComments: 1
         }))
         .pipe(sourceMaps.write('./maps'))
